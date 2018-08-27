@@ -20,9 +20,29 @@ function sf_child_theme_dequeue_style() {
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
 
+//Text on cart button
+
  add_filter('woocommerce_product_add_to_cart_text', 'wh_archive_custom_cart_button_text'); // 2.1 +
 
  function wh_archive_custom_cart_button_text()
  {
  return __('Ajouter au panier', 'woocommerce');
  }
+
+//Attributes on products
+
+add_action('woocommerce_after_shop_loop_item_title', 'show_attr');
+
+function show_attr()
+{
+    global $product;
+	$product_attributes = $product->list_attributes();
+}
+
+//Remove catalog ordering field
+
+add_action('init','delay_remove');
+function delay_remove() {
+    remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+}

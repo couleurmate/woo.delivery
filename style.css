@@ -118,6 +118,9 @@ width: 100%}
     font-weight: 300;
     margin-right: 1em;}
 
+.single_add_to_cart_button.button.alt {
+	background : #5f9421;}
+
 .attachment-woocommerce_thumbnail {
     border: solid 0.1em #F3F8FE !important;}
 
