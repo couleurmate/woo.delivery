@@ -115,7 +115,7 @@ ul.menu li a {
 .cat-item {
 	display: block;
   width: 100%;
-  padding-top: .25rem;
+  padding: .5rem;
   clear: both;}
 
 .cat-item:hover {
@@ -134,6 +134,9 @@ ul.menu li a {
 .widget_product_categories ul .children {
 	margin: 0;
 	padding: .25rem 0;}
+
+/* add custom html as a widget */#custom_html-2 {
+	margin: 0 1em 0.706326em}
 
 /* Main page */
 
