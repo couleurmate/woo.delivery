@@ -23,9 +23,15 @@ Images License: GNU General Public License v2 or later
  * Add your own custom css below this text.
  */
 
-body,button,input,textarea{font-family:"Montserrat", sans-serif}
+body,button,input,textarea{font-family:"Lato", sans-serif}
 
 /* Header */
+
+.site-header {
+	background: #5f9421;
+	max-height: 3em;
+	padding: 0;
+  margin: 0;}
 
 .storefront-primary-navigation {
 	background-color: #5f9421;}
@@ -33,12 +39,55 @@ body,button,input,textarea{font-family:"Montserrat", sans-serif}
 .site-branding .site-title a {
  	color: #5f9421;}
 
- ul.menu li a {
-	 color: #fff;}
+ul.menu li a {
+ color: #fff;}
 
- .main-navigation ul li a:hover {
+.main-navigation ul li a:hover {
 	color: #5f9421;
 	background-color: #fff;}
+
+.storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+	float: right;
+	margin-right: 0;}
+
+.secondary-navigation ul.menu a {
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700}
+
+.storefront-primary-navigation {
+	background: #fff;}
+
+ul.menu li a {
+	color: #000;}
+
+#menu-primary-menu {
+	margin-left:0;
+	float:right;}
+
+	#menu-primary-menu:before { content:url("/wp-content/themes/storefront-child/images/header.png");
+		float:left;}
+
+	#menu-item-3412 {
+		margin-right: 2em;}
+
+.main-navigation {
+		margin-bottom: 5%}
+
+#site-header-cart {
+		margin-top: 2.3%;}
+
+		#site-header-cart::before {
+			content: "Webshop";
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #FFF;
+			background-color: #5f9421;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			padding: 0.5em;}
 
 /* Sidebar */
 
@@ -86,8 +135,20 @@ body,button,input,textarea{font-family:"Montserrat", sans-serif}
 	margin: 0;
 	padding: .25rem 0;}
 
-.widget_tag_cloud {
-	margin: 1.5em}
+/* Main page */
+
+.woocommerce-message {
+	border-left-color: #5f9421 !important;}
+
+.menu-item {
+	text-transform: uppercase;}
+
+a{
+	font-weight:700}
+
+.demo_store {
+	background-color: #0f834d;}
+
 
 /* Product card */
 
@@ -132,9 +193,30 @@ width: 100%}
 .woocommerce-Price-amount.amount {
 	color: #4D8655 !important;}
 
+.woocommerce-product-details__short-description {
+	display:none;}
+
+		/* Attributes */
+		table th {
+			display: none;}
+
+		table tbody td {
+			background-color: transparent;
+			color: #4D8655;}
+
+
 	/* Checkout */
-.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {color: #4D8655;}
+.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: #4D8655;}
 
-.woocommerce-privacy-policy-link, .woocommerce-terms-and-conditions-link {color: #F46937}
+.woocommerce-privacy-policy-link, .woocommerce-terms-and-conditions-link {
+	color: #F46937}
 
-.woocommerce-shipping-calculator > p:first-child a::before {content:"\f206"}
+.woocommerce-shipping-calculator > p:first-child a::before {
+	content:"\f206"}
+
+a.shipping-calculator-button {
+	color: #EC6707;}
+
+.woocommerce-shipping-calculator > p:first-child a::before {
+	content: "\f206";}

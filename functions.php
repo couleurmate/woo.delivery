@@ -46,3 +46,25 @@ function delay_remove() {
     remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
 }
+
+// Remove-storefront-search-box-header.php
+
+function remove_sf_actions() {
+
+	remove_action( 'storefront_header', 'storefront_product_search', 40 );
+
+}
+add_action( 'init', 'remove_sf_actions' );
+
+// Change the placeholder image
+
+add_filter('woocommerce_placeholder_img_src', 'custom_woocommerce_placeholder_img_src');
+
+function custom_woocommerce_placeholder_img_src( $src ) {
+	$upload_dir = wp_upload_dir();
+	$uploads = untrailingslashit( $upload_dir['baseurl'] );
+	// replace with path to your image
+	$src = $uploads . '/2018/placeholder.png';
+
+	return $src;
+}
