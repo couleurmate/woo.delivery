@@ -8,7 +8,9 @@
  * If you don't plan to dequeue the Storefront Core CSS you can remove the subsequent line and as well
  * as the sf_child_theme_dequeue_style() function declaration.
  */
+
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
+
 /**
  * Dequeue the Storefront Parent theme core CSS
  */
@@ -16,6 +18,12 @@ function sf_child_theme_dequeue_style() {
     wp_dequeue_style( 'storefront-style' );
     wp_dequeue_style( 'storefront-woocommerce-style' );
 }
+
+function aurayonbio_styles() {
+    wp_enqueue_style('google-fonts-lato', 'https://fonts.googleapis.com/css?family=Lato:300,400,700');
+}
+add_action('wp_enqueue_scripts', 'aurayonbio_styles');
+
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
@@ -69,7 +77,7 @@ function custom_woocommerce_placeholder_img_src( $src ) {
 	return $src;
 }
 
-// Go back button on product single page 
+// Go back button on product single page
 
 add_action( 'woocommerce_after_add_to_cart_button', 'my_function_sample', 10 );
 function my_function_sample() {
