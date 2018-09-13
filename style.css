@@ -72,6 +72,12 @@ body {
     margin-bottom: 0;
 }
 
+/* Products page */
+
+.woocommerce-products-header__title {
+    display: none;
+}
+
 ul.menu li a {
  color: #fff;}
 
