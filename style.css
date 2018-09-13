@@ -1,0 +1,236 @@
+/*
+Theme Name:   	Storefront Child
+Theme URI:    	https://github.com/stuartduff/storefront-child-theme
+Author:       	couleurmate
+Author URI:     http://stuartduff.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+
+body,button,input,textarea{font-family:"Lato", sans-serif}
+
+/* Header */
+
+.site-header {
+	background: #5f9421;
+	max-height: 3em;
+	padding: 0;
+  margin: 0;}
+
+.storefront-primary-navigation {
+	background-color: #5f9421;}
+
+.woocommerce-active .site-header .main-navigation {
+width: 75.913043%;
+}
+
+.woocommerce-active .site-header .site-header-cart {
+width: 19.73913%;}
+
+.site-branding .site-title a {
+ 	color: #5f9421;}
+
+ul.menu li a {
+ color: #fff;}
+
+ .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+ padding: 10px 15px;}
+
+	.main-navigation ul li a:hover {
+		color: #5f9421;
+		background-color: #fff;}
+
+.storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+	float: right;
+	margin-right: 0;}
+
+.secondary-navigation ul.menu a {
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700}
+
+.storefront-primary-navigation {
+	background: #fff;}
+
+ul.menu li a {
+	color: #000;}
+
+#menu-primary-menu {
+	margin-left:0;
+	float:right;}
+
+	#menu-primary-menu:before { content:url("/wp-content/themes/storefront-child/images/header.png");
+		float:left;}
+
+	#menu-item-3412 {
+		margin-right: 2em;}
+
+.main-navigation {
+		margin-bottom: 5%}
+
+.site-header-cart .cart-contents {
+	padding: 0.618em 0;}
+
+.site-header ul.menu li.current-menu-item > a {
+	color: #fff;
+  background-color: #5f9421;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;}
+
+/* Sidebar */
+
+.left-sidebar .widget-area {
+	background: #EC6707;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 24px;
+	height: 200vh;
+	padding: 4vh 0;}
+
+.widget_product_categories ul li::before {
+	display:none;	}
+
+.widget-area .widget a {
+	color: #FFFFFF;}
+
+.widget-area .widget a:not(.button) {
+	text-decoration: none;}
+
+.current-cat.cat-parent {
+	background: #C84700;}
+
+.cat-item {
+	display: block;
+  width: 100%;
+  padding: .5rem;
+  clear: both;}
+
+	.cat-item:hover {
+		background: #C84700;}
+
+.cat-item.cat-item-74 {
+	margin-bottom: 3em;}
+
+.children {
+	background: #C84700;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+	transform: translate3d(0px, 0px, 0px);}
+
+.children li:hover {
+	background: #EC6707;}
+
+.widget_product_categories ul .children {
+	margin: 0;
+	padding: .25rem 0;}
+
+/* add custom html as a widget */#custom_html-2 {
+	margin: 0 1em 0.706326em}
+
+/* Main page */
+
+.woocommerce-message {
+	border-left-color: #5f9421 !important;}
+
+.menu-item {
+	text-transform: uppercase;}
+
+a{
+	font-weight:700}
+
+.demo_store {
+	background-color: #0f834d;}
+
+
+/* Product card */
+
+.product {
+font-size: 14px;
+letter-spacing: 0;
+line-height: 14px;}
+
+ul.products li.product {
+border: 1px solid #CCC;}
+
+.price {
+font-size: 18px;
+letter-spacing: 0;
+text-align: right;
+padding-right: 10px;}
+
+ul.products li.product .button {
+	margin-bottom: 0;}
+
+.woocommerce-loop-product__title {
+	color: #4D8655;
+	text-align:left;
+	font-weight:600 !important;
+  padding-right: 10px;}
+
+.add_to_cart_button {
+background: #76B729;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: right;
+width: 100%}
+
+	.add_to_cart_button:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    float: left;
+    content: "\f291";
+    font-weight: 300;
+    margin-right: 1em;}
+
+.single_add_to_cart_button.button.alt {
+	background : #5f9421;}
+
+
+.woocommerce-Price-amount.amount {
+	color: #4D8655 !important;}
+
+.woocommerce-product-details__short-description {
+	display:none;}
+
+		/* Attributes */
+		table th {
+			display: none;}
+
+		table tbody td {
+			background-color: transparent;
+			color: #4D8655;}
+
+
+	/* Checkout */
+.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: #4D8655;}
+
+.woocommerce-privacy-policy-link, .woocommerce-terms-and-conditions-link {
+	color: #F46937}
+
+.woocommerce-shipping-calculator > p:first-child a::before {
+	content:"\f206"}
+
+a.shipping-calculator-button {
+	color: #EC6707;}
