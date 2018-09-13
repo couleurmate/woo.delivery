@@ -23,7 +23,10 @@ Images License: GNU General Public License v2 or later
  * Add your own custom css below this text.
  */
 
-body,button,input,textarea{font-family:"Lato", sans-serif}
+body {
+    font-family: "Lato", "Neue Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
 
 /* Header */
 
@@ -97,52 +100,46 @@ ul.menu li a {
 
 /* Sidebar */
 
-.left-sidebar .widget-area {
-	background: #EC6707;
-  font-size: 14px;
-  color: #FFFFFF;
-  letter-spacing: 0;
-  line-height: 24px;
-	height: 200vh;
-	padding: 4vh 0;}
+#secondary {
+    background: #EC6707;
+    height: 100vh;
+}
 
-.widget_product_categories ul li::before {
-	display:none;	}
+#secondary li:before {
+    display:none;
+}
 
-.widget-area .widget a {
-	color: #FFFFFF;}
+#secondary li {
+    margin-bottom: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    position: relative;
+}
 
-.widget-area .widget a:not(.button) {
-	text-decoration: none;}
+#secondary li:hover {
+    background: #C84700;
+}
 
-.current-cat.cat-parent {
-	background: #C84700;}
+#secondary li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
 
-.cat-item {
-	display: block;
-  width: 100%;
-  padding: .5rem;
-  clear: both;}
+#secondary li ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    min-width: 100%;
+    background: #C84700;
+    margin-left: 0;
+}
 
-	.cat-item:hover {
-		background: #C84700;}
-
-.cat-item.cat-item-74 {
-	margin-bottom: 3em;}
-
-.children {
-	background: #C84700;
-  will-change: transform;
-  top: 0px;
-  left: 0px;
-	transform: translate3d(0px, 0px, 0px);}
-
-.children li:hover {
-	background: #EC6707;}
-
-.widget_product_categories ul .children {
-	margin: 0;
-	padding: .25rem 0;}
+#secondary li:hover ul {
+    visibility: visible;
+}
 
 /* add custom html as a widget */#custom_html-2 {
 	margin: 0 1em 0.706326em}
