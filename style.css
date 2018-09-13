@@ -28,10 +28,6 @@ body {
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Montserrat', "Neue Helvetica", Helvetica, Arial, sans-serif;
-}
-
 /* Header */
 
 .site-header {
