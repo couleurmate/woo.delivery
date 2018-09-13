@@ -178,11 +178,13 @@ padding-right: 10px;}
 ul.products li.product .button {
 	margin-bottom: 0;}
 
-.woocommerce-loop-product__title {
+ul.products li.product .woocommerce-loop-product__title {
 	color: #4D8655;
-	text-align:left;
-	font-weight:600 !important;
-  padding-right: 10px;}
+	text-align: left;
+	font-weight: 600;
+    padding-left: .5em;
+    padding-right: .5em;
+}
 
 .add_to_cart_button {
 background: #76B729;
@@ -245,9 +247,14 @@ ul.products li.product .woocommerce-LoopProduct-link .onsale {
 .aurayonbio__after-item-title {
     min-height: 14px;
     text-align: left;
+    margin: .5em;
 }
 
 .aurayonbio__product-attributes {
     list-style-type: none;
     margin: 0;
+}
+
+.aurayonbio__product-attributes li {
+    color: #000000;
 }
