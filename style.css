@@ -68,6 +68,10 @@ body {
     display: none;
 }
 
+.secondary-navigation {
+    margin-bottom: 0;
+}
+
 ul.menu li a {
  color: #fff;}
 
