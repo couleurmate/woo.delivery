@@ -20,7 +20,7 @@ function sf_child_theme_dequeue_style() {
 }
 
 function aurayonbio_styles() {
-    wp_enqueue_style('google-fonts-lato-montserrat', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700');
+    wp_enqueue_style('google-fonts-lato', 'https://fonts.googleapis.com/css?family=Lato:300,400,700');
 }
 add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 
