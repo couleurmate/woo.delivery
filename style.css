@@ -64,8 +64,9 @@ body {
     margin-top: 50px;
 }
 
-.site-branding .site-title a {
- 	color: #5f9421;}
+.site-header .site-branding {
+    display: none;
+}
 
 ul.menu li a {
  color: #fff;}
