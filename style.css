@@ -205,6 +205,10 @@ ul.products li.product .woocommerce-loop-product__title {
 	font-weight: 600;
     padding-left: 1em;
     padding-right: 1em;
+    /* Truncate string with ellipsis */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 ul.products li.product .add_to_cart_button {
