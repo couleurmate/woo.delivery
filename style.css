@@ -36,6 +36,10 @@ body {
     margin: 0;
 }
 
+#masthead {
+    margin-bottom: 0;
+}
+
 .site-header > div:first-child {
     max-height: 3em;
 }
