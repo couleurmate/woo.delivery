@@ -91,13 +91,6 @@ ul.menu li a {
 .site-header-cart .cart-contents {
 	padding: 0.618em 0;}
 
-.site-header ul.menu li.current-menu-item > a {
-	color: #fff;
-  background-color: #5f9421;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;}
-
 /* Sidebar */
 
 #secondary {
