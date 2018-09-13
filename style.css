@@ -231,3 +231,23 @@ width: 100%}
 
 a.shipping-calculator-button {
 	color: #EC6707;}
+
+ul.products li.product .woocommerce-LoopProduct-link {
+    position: relative;
+}
+
+ul.products li.product .woocommerce-LoopProduct-link .onsale {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.aurayonbio__after-item-title {
+    min-height: 14px;
+    text-align: left;
+}
+
+.aurayonbio__product-attributes {
+    list-style-type: none;
+    margin: 0;
+}
