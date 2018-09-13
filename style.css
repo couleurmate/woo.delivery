@@ -25,6 +25,9 @@ Images License: GNU General Public License v2 or later
 
 body,button,input,textarea{font-family:"Lato", sans-serif}
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', "Neue Helvetica", Helvetica, Arial, sans-serif;}
+
 /* Header */
 
 .site-header {
