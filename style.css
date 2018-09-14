@@ -38,10 +38,12 @@ body {
 
 #masthead {
     margin-bottom: 0;
+    position: relative;
 }
 
-.site-header > div:first-child {
-    max-height: 3em;
+#masthead .site-branding {
+    position: absolute;
+    bottom: 0;
 }
 
 .storefront-breadcrumb {
@@ -55,21 +57,11 @@ body {
 
 #site-navigation {
     margin-bottom: 0;
-    position: relative;
     padding-left: 230px;
 }
-#site-navigation:before {
-    content: url("/wp-content/themes/storefront-child/images/header.png");
-    position: absolute;
-    left: 0;
-    top: 20px;
-}
+
 .primary-navigation, #site-header-cart {
     margin-top: 50px;
-}
-
-.site-header .site-branding {
-    display: none;
 }
 
 .secondary-navigation {
