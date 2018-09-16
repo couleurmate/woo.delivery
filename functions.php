@@ -39,13 +39,30 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 
 //Attributes on products
 
-add_action('woocommerce_after_shop_loop_item_title', 'show_attr');
+function aurayonbio_after_shop_loop_item_title() {
 
-function show_attr()
-{
     global $product;
-	$product_attributes = $product->list_attributes();
+
+    $origin_attribute = null;
+    foreach ($product->attributes as $attribute) {
+        if ($attribute->get_name() === 'pa_origin') {
+            $origin_attribute = $attribute;
+            break;
+        }
+    }
+
+    echo '<div class="aurayonbio__after-item-title">';
+    if ($origin_attribute) {
+        echo '<ul class="aurayonbio__product-attributes">';
+        foreach ($origin_attribute->get_terms() as $term) {
+            echo '<li>' . $term->name . '</li>';
+        }
+        echo '</ul>';
+    }
+    echo '</div>';
 }
+
+add_action('woocommerce_after_shop_loop_item_title', 'aurayonbio_after_shop_loop_item_title');
 
 //Remove catalog ordering field
 

@@ -79,9 +79,6 @@ ul.menu li a {
 	margin-left:0;
 	float:right;}
 
-	#menu-primary-menu:before { content:url("/wp-content/themes/storefront-child/images/header.png");
-		float:left;}
-
 .main-navigation {
 		margin-bottom: 5%}
 
