@@ -101,3 +101,14 @@ function my_function_sample() {
   global $product;
   echo ' <button type="button" onclick="history.back();"> Retourner en arrière </button> ';
 }
+
+// Hide SKU on product page
+add_filter( 'wc_product_sku_enabled', 'bbloomer_remove_product_page_sku' );
+
+function bbloomer_remove_product_page_sku( $enabled ) {
+    if ( !is_admin() && is_product() ) {
+        return false;
+    }
+
+    return $enabled;
+}
