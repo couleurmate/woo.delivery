@@ -138,6 +138,10 @@ ul.menu li a {
     visibility: visible;
 }
 
+/* add margin to Legumes categories */
+#menu-item-5101 {
+  margin-bottom: 1.5em;}
+
 /* add custom html as a widget */#custom_html-2 {
 	margin: 0 1em 0.706326em}
 

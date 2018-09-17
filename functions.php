@@ -45,7 +45,7 @@ function aurayonbio_after_shop_loop_item_title() {
 
     $origin_attribute = null;
     foreach ($product->attributes as $attribute) {
-        if ($attribute->get_name() === 'pa_origin') {
+        if ($attribute->get_name() === 'pa_origin', 'pa_brand') {
             $origin_attribute = $attribute;
             break;
         }
