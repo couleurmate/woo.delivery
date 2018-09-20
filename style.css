@@ -211,15 +211,6 @@ width: 100%}
 .woocommerce-product-details__short-description {
 	display:none;}
 
-		/* Attributes */
-		table th {
-			display: none;}
-
-		table tbody td {
-			background-color: transparent;
-			color: #4D8655;}
-
-
 	/* Checkout */
 .star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
 	color: #4D8655;}
