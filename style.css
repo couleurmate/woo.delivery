@@ -74,9 +74,6 @@ body {
     display: none;
 }
 
-ul.menu li a {
- color: #fff;}
-
  .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
  padding: 10px 15px;}
 
@@ -89,13 +86,13 @@ ul.menu li a {
 	margin-right: 0;}
 
 .secondary-navigation ul.menu a {
-	color: #fff;
 	font-size: 1em;
 	line-height: 1.5;
 	font-weight: 700}
 
-ul.menu li a {
-	color: #000;}
+  #menu-menu-secondaire .menu-menu-secondaire-submenu a {
+  	color: #fff;
+  }
 
 #menu-primary-menu {
 	margin-left:0;
@@ -152,7 +149,7 @@ ul.menu li a {
 }
 
 /* add margin to Legumes categories */
-#menu-item-5101 {
+#menu-item-2331 {
   margin-bottom: 1.5em;}
 
 /* add custom html as a widget */#custom_html-2 {
