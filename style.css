@@ -269,3 +269,13 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
 .aurayonbio__product-attributes li {
     color: #000000;
 }
+
+	/* Menu Mobile */
+#menu-menu-mobile {
+	background-color: #5f9421;}
+
+#menu-menu-mobile>li>a {
+  color: #fff;}
+
+button.menu-toggle, button.menu-toggle:hover {
+	border-color: #5f9421;}
