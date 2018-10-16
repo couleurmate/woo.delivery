@@ -148,6 +148,9 @@ body {
     visibility: visible;
 }
 
+.secondary-navigation ul.menu .my-account a {
+	color: #fff;}
+
 /* add margin to Legumes categories */
 #menu-item-2331 {
   margin-bottom: 1.5em;}

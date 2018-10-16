@@ -28,15 +28,6 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
 
-//Text on cart button
-
- add_filter('woocommerce_product_add_to_cart_text', 'wh_archive_custom_cart_button_text'); // 2.1 +
-
- function wh_archive_custom_cart_button_text()
- {
- return __('Ajouter au panier', 'woocommerce');
- }
-
 //Attributes on products
 
 function aurayonbio_after_shop_loop_item_title() {
