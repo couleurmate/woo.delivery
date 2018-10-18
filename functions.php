@@ -85,14 +85,6 @@ function custom_woocommerce_placeholder_img_src( $src ) {
 	return $src;
 }
 
-// Go back button on product single page
-
-add_action( 'woocommerce_after_add_to_cart_button', 'my_function_sample', 10 );
-function my_function_sample() {
-  global $product;
-  echo ' <button type="button" onclick="history.back();"> Retourner en arrière </button> ';
-}
-
 // Hide SKU on product page
 add_filter( 'wc_product_sku_enabled', 'bbloomer_remove_product_page_sku' );
 
