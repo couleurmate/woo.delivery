@@ -186,7 +186,7 @@ ul.products li.product img {
 ul.products li.product .price {
     font-size: 1.2rem;
     text-align: right;
-    padding: 0 1em;
+    margin-bottom: 0;
 }
 
 ul.products li.product .button {
@@ -258,19 +258,28 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
     display: none;
 }
 
-.aurayonbio__after-item-title {
+.aurayonbio__after-item-table {
+    padding: 0 1em 1em 1em;
+    margin-bottom: 0;
+    empty-cells: show;
+}
+
+.aurayonbio__after-item-table tbody tr td {
+    vertical-align: bottom;
+    padding: 0;
     min-height: 22px;
-    text-align: left;
-    margin: 1em;
 }
 
-.aurayonbio__product-attributes {
-    list-style-type: none;
-    margin: 0;
+.aurayonbio__after-item-table tbody tr:nth-child(2n) td {
+    background-color: transparent;
 }
 
-.aurayonbio__product-attributes li {
+.aurayonbio__after-item-table__origin {
     color: #000000;
+}
+
+.aurayonbio__after-item-table__brand {
+    color: #b0b0b0;
 }
 
 	/* Menu Mobile */

@@ -11,6 +11,11 @@
 
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
+function aurayonbio_add_woocommerce_support() {
+    add_theme_support('woocommerce');
+}
+add_action('after_setup_theme', 'aurayonbio_add_woocommerce_support');
+
 /**
  * Dequeue the Storefront Parent theme core CSS
  */
@@ -27,33 +32,6 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
-
-//Attributes on products
-
-function aurayonbio_after_shop_loop_item_title() {
-
-    global $product;
-
-    $origin_attribute = null;
-    foreach ($product->attributes as $attribute) {
-        if ($attribute->get_name() === 'pa_origin') {
-            $origin_attribute = $attribute;
-            break;
-        }
-    }
-
-    echo '<div class="aurayonbio__after-item-title">';
-    if ($origin_attribute) {
-        echo '<ul class="aurayonbio__product-attributes">';
-        foreach ($origin_attribute->get_terms() as $term) {
-            echo '<li>' . $term->name . '</li>';
-        }
-        echo '</ul>';
-    }
-    echo '</div>';
-}
-
-add_action('woocommerce_after_shop_loop_item_title', 'aurayonbio_after_shop_loop_item_title');
 
 //Remove catalog ordering field
 
