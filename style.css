@@ -88,11 +88,15 @@ body {
 .secondary-navigation ul.menu a {
 	font-size: 1em;
 	line-height: 1.5;
-	font-weight: 700}
+  font-weight: 700;}
 
-  #menu-menu-secondaire .menu-menu-secondaire-submenu a {
-  	color: #fff;
-  }
+#menu-menu-secondaire .menu-menu-secondaire-submenu a {
+  color: #fff;
+}
+
+#menu-menu-secondaire-neerlandais .menu-menu-secondaire-submenu a {
+  color: #fff;
+}
 
 #menu-primary-menu {
 	margin-left:0;
@@ -174,6 +178,9 @@ a{
 
 
 /* Product card */
+
+ul.products li.product .woocommerce-loop-product__title, ul.products li.product h2, ul.products li.product h3 {
+	font-size: 0.9rem;}
 
 ul.products li.product {
     border: 1px solid #CCC;
