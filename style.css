@@ -157,9 +157,9 @@ body {
 .secondary-navigation ul.menu .my-account a {
 	color: #fff;}
 
-/* add margin to Legumes categories */
-#menu-item-2331 {
-  margin-bottom: 2em !important;}
+/* add margin to Fruits-Legumes categories */
+.widget_nav_menu {
+  margin-bottom: 2em;}
 
 /* add custom html as a widget */#custom_html-2 {
 	margin: 0 1em 0.706326em}
