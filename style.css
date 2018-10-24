@@ -159,7 +159,7 @@ body {
 
 /* add margin to Legumes categories */
 #menu-item-2331 {
-  margin-bottom: 1.5em;}
+  margin-bottom: 2em !important;}
 
 /* add custom html as a widget */#custom_html-2 {
 	margin: 0 1em 0.706326em}
