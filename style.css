@@ -68,6 +68,8 @@ body {
     margin-bottom: 0;
 }
 
+.secondary-navigation ul.menu a:hover {color: #404040 !important;}
+
 /* Products page */
 
 .woocommerce-products-header__title {
