@@ -73,3 +73,23 @@ function bbloomer_remove_product_page_sku( $enabled ) {
 
     return $enabled;
 }
+
+// Change the shop / product prices if a unit_price is set
+function sv_change_product_html( $price_html, $product ) {
+	$unit_price = get_post_meta( $product->id, 'unit_price', true );
+	if ( ! empty( $unit_price ) ) {
+		$price_html = '<span class="amount">' . wc_price( $unit_price ) . ' /kg</span>';
+	}
+
+	return $price_html;
+}
+add_filter( 'woocommerce_get_price_html', 'sv_change_product_html', 10, 2 );
+// Change the cart prices if a unit_price is set
+function sv_change_product_price_cart( $price, $cart_item, $cart_item_key ) {
+	$unit_price = get_post_meta( $cart_item['product_id'], 'unit_price', true );
+	if ( ! empty( $unit_price ) ) {
+		$price = wc_price( $unit_price ) . ' /kg';
+	}
+	return $price;
+}
+add_filter( 'woocommerce_cart_item_price', 'sv_change_product_price_cart', 10, 3 );
