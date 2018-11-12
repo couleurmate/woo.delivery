@@ -291,12 +291,18 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
     color: #b0b0b0;
 }
 
-	/* Menu Mobile */
+/* Menu Mobile */
 #menu-menu-mobile {
-	background-color: #5f9421;}
+background-color: #5f9421;}
 
 #menu-menu-mobile>li>a {
-  color: #fff;}
+color: #fff;}
+
+#menu-menu-mobile>li>a:hover {
+color: #5f9421;}
+
+#menu-menu-mobile .menu-item.wpml-ls-slot-187 {
+display: inline-block;}
 
 button.menu-toggle, button.menu-toggle:hover {
-	border-color: #5f9421;}
+border-color: #5f9421;}
