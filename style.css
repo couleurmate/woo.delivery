@@ -291,6 +291,15 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
     color: #b0b0b0;
 }
 
+.aurayonbio__after-item-table__price-per-kg {
+    text-align: right;
+}
+
+.aurayonbio__after-item-table__price-per-kg,
+.aurayonbio__after-item-table__price-per-kg .amount {
+    color: #b0b0b0;
+}
+
 /* Menu Mobile */
 #menu-menu-mobile {
 background-color: #5f9421;}
