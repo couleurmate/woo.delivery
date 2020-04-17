@@ -57,7 +57,7 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 //	remove_action( 'storefront_header', 'storefront_product_search', 40 );
 
 //}
-add_action( 'init', 'remove_sf_actions' );
+//add_action( 'init', 'remove_sf_actions' );
 
 // Change the placeholder image
 
