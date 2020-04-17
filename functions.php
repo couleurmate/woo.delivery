@@ -11,6 +11,15 @@
 
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
+// afficher la date de livraison dans le mail de confirmation
+add_action( "woocommerce_email_after_order_table", "custom_woocommerce_email_after_order_table", 10, 1);
+
+function custom_woocommerce_email_after_order_table( $order ) {
+
+    echo '<p><strong>Delivery Day :</strong>'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
+
+}
+
 function aurayonbio_add_woocommerce_support() {
     add_theme_support('woocommerce');
 }
