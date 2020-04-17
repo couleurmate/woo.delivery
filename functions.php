@@ -44,19 +44,19 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 
 //Remove catalog ordering field
 
-add_action('init','delay_remove');
-function delay_remove() {
-    remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
-    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
-}
+//add_action('init','delay_remove');
+//function delay_remove() {
+//    remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+//    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+//}
 
 // Remove-storefront-search-box-header.php
 
-function remove_sf_actions() {
+//function remove_sf_actions() {
 
-	remove_action( 'storefront_header', 'storefront_product_search', 40 );
+//	remove_action( 'storefront_header', 'storefront_product_search', 40 );
 
-}
+//}
 add_action( 'init', 'remove_sf_actions' );
 
 // Change the placeholder image
