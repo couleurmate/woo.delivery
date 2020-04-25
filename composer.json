@@ -23,8 +23,7 @@
     "source": "http://core.trac.wordpress.org/browser"
   },
   
-  {
-    "repositories":[
+      "repositories":[
         {
             "type":"composer",
             "url":"https://wpackagist.org"
