@@ -33,6 +33,7 @@
     "php": ">=5.6.20",
     "wpackagist-plugin/akismet":"^4.1",
     "wpackagist-plugin/coopcycle":">=0.9.2",
+    "wpackagist-plugin/WooCommerce":">=4.0.0"
     "wpackagist-theme/storefront":"*"
      }
 }
