@@ -15,11 +15,11 @@ language: php
 php:
     - "7.0"
     - "5.6"
-     #- "5.5"
-     #- "5.4"
-     #- "5.3"
-    # Current $required_php_version for WordPress: 5.2.4
-     #- "5.2"
+#- "5.5"
+#- "5.4"
+#- "5.3"
+# Current $required_php_version for WordPress: 5.2.4
+#- "5.2"
 
 #TODO check specific 5.6.36
 
@@ -60,8 +60,8 @@ before_script:
     # Create WordPress database.
     # TODO : problem to create the database
     
-   services:
-  - mysql 
+services:
+- mysql 
     
     
     - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
@@ -105,4 +105,4 @@ script:
     # -n flag: Do not print warnings (shortcut for --warning-severity=0)
     # --standard: Use WordPress as the standard.
     # --extensions: Only sniff PHP files.
-    - $WP_DEVELOP_DIR/php-codesniffer/scripts/phpcs -p -s -v -n . --standard=./codesniffer.ruleset.xml --extensions=php
+    # - $WP_DEVELOP_DIR/php-codesniffer/scripts/phpcs -p -s -v -n . --standard=./codesniffer.ruleset.xml --extensions=php
