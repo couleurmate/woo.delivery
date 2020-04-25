@@ -63,6 +63,7 @@ before_script:
 services:
 - mysql
 - mysql -e 'CREATE DATABASE wordpress_test;' -uroot
+
     # Install CodeSniffer for WordPress Coding Standards checks.
     #- mkdir php-codesniffer && curl -L https://github.com/squizlabs/PHP_CodeSniffer/archive/master.tar.gz | tar xz --strip-components=1 -C php-codesniffer
     # Install WordPress Coding Standards.
