@@ -16,7 +16,7 @@ add_action( "woocommerce_email_after_order_table", "custom_woocommerce_email_aft
 
 function custom_woocommerce_email_after_order_table( $order ) {
 
-    echo '<p><strong>Delivery Day :</strong>'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
+    echo '<p>Delivery Day :'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
 
 }
 
