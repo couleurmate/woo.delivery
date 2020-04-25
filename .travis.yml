@@ -1,8 +1,8 @@
 # Travis CI configuration file.
 # @link https://travis-ci.org/
 
-# For use with the Twenty Sixteen WordPress theme
-# @link https://github.com/WordPress/twentysixteen/
+# For use with Storefront woodelivery WordPress childtheme
+# @link https://github.com/woocommerce/storefront/
 
 #TODO make this test for Storefront
 #TODO check how make test with woo
