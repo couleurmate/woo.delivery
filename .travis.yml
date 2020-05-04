@@ -10,7 +10,7 @@
 # Declare project language and PHP versions to test against.
 # @link http://about.travis-ci.org/docs/user/languages/php/
 ignore:
-    - *.md
+  - Hardware/*
 language: php
 
 # Declare versions of PHP to use. Use one decimal max.
