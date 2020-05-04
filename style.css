@@ -1,7 +1,7 @@
 /*
-Theme Name:   	Storefront Child Theme
+Theme Name:   	Storefront Child
 Theme URI:    	https://github.com/stuartduff/storefront-child-theme
-Author:       	Stuart Duff
+Author:       	couleurmate
 Author URI:     http://stuartduff.com
 Template:     	storefront
 Description:  	This is a blank child theme for WooThemes StoreFront theme
@@ -69,10 +69,6 @@ body {
 }
 
 .secondary-navigation ul.menu a:hover {color: #404040 !important;}
-
-.entry-header .entry-title {
-	display: none;
-}
 
 /* Products page */
 
@@ -217,10 +213,6 @@ ul.products li.product .woocommerce-loop-product__title {
     text-overflow: ellipsis
 }
 
-ul.products li.product .woocommerce-loop-product__title:hover {
-  white-space: normal;
-}
-
 ul.products li.product .add_to_cart_button {
     background: #76B729;
     color: #FFFFFF;
@@ -299,10 +291,13 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
     color: #b0b0b0;
 }
 
-#shipping_time_field {display:none;}
+.aurayonbio__after-item-table__price-per-kg {
+    text-align: right;
+}
 
-ul#shipping_method.woocommerce-shipping-methods>li>label {
-  color: #c43b34;
+.aurayonbio__after-item-table__price-per-kg,
+.aurayonbio__after-item-table__price-per-kg .amount {
+    color: #b0b0b0;
 }
 
 /* Menu Mobile */
