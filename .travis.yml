@@ -19,7 +19,7 @@ php:
     - "5.6"
 #- "5.5"
     - "5.4" 
-    - dist: trusty
+    - dist: xenial
 #- "5.3"
 # Current $required_php_version for WordPress: 5.2.4
 #- "5.2"
