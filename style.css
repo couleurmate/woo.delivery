@@ -70,6 +70,10 @@ body {
 
 .secondary-navigation ul.menu a:hover {color: #404040 !important;}
 
+.entry-header .entry-title {
+	display: none;
+}
+
 /* Products page */
 
 .woocommerce-products-header__title {
@@ -213,6 +217,10 @@ ul.products li.product .woocommerce-loop-product__title {
     text-overflow: ellipsis
 }
 
+ul.products li.product .woocommerce-loop-product__title:hover {
+  white-space: normal;
+}
+
 ul.products li.product .add_to_cart_button {
     background: #76B729;
     color: #FFFFFF;
@@ -289,6 +297,12 @@ ul.products li.product .woocommerce-LoopProduct-link .star-rating {
 
 .aurayonbio__after-item-table__brand {
     color: #b0b0b0;
+}
+
+#shipping_time_field {display:none;}
+
+ul#shipping_method.woocommerce-shipping-methods>li>label {
+  color: #c43b34;
 }
 
 /* Menu Mobile */
