@@ -11,6 +11,7 @@
 
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
+
 function aurayonbio_add_woocommerce_support() {
     add_theme_support('woocommerce');
 }
@@ -35,20 +36,20 @@ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 
 //Remove catalog ordering field
 
-add_action('init','delay_remove');
-function delay_remove() {
-    remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
-    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
-}
+//add_action('init','delay_remove');
+//function delay_remove() {
+//    remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+//    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+//}
 
 // Remove-storefront-search-box-header.php
 
-function remove_sf_actions() {
+//function remove_sf_actions() {
 
-	remove_action( 'storefront_header', 'storefront_product_search', 40 );
+//	remove_action( 'storefront_header', 'storefront_product_search', 40 );
 
-}
-add_action( 'init', 'remove_sf_actions' );
+//}
+//add_action( 'init', 'remove_sf_actions' );
 
 // Change the placeholder image
 
@@ -72,4 +73,12 @@ function bbloomer_remove_product_page_sku( $enabled ) {
     }
 
     return $enabled;
+}
+
+// afficher la date de livraison dans le mail de confirmation
+ add_action( 'woocommerce_email_order_details', 'ts_email_order_details', 10, 4);
+
+ function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
+   echo '<p><strong>Votre commande sera livrée le : </strong>'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
+
 }
