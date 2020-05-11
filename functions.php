@@ -11,12 +11,6 @@
 
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
-
-function aurayonbio_add_woocommerce_support() {
-    add_theme_support('woocommerce');
-}
-add_action('after_setup_theme', 'aurayonbio_add_woocommerce_support');
-
 /**
  * Dequeue the Storefront Parent theme core CSS
  */
@@ -25,14 +19,19 @@ function sf_child_theme_dequeue_style() {
     wp_dequeue_style( 'storefront-woocommerce-style' );
 }
 
-function aurayonbio_styles() {
-    wp_enqueue_style('google-fonts-lato-montserrat', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700');
-}
-add_action('wp_enqueue_scripts', 'aurayonbio_styles');
-
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
+
+ function aurayonbio_add_woocommerce_support() {
+   add_theme_support('woocommerce');
+ }
+ add_action('after_setup_theme', 'aurayonbio_add_woocommerce_support');
+
+ function aurayonbio_styles() {
+   wp_enqueue_style('google-fonts-lato-montserrat', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700');
+ }
+ add_action('wp_enqueue_scripts', 'aurayonbio_styles');
 
 //Remove catalog ordering field
 
@@ -74,11 +73,11 @@ function bbloomer_remove_product_page_sku( $enabled ) {
 
     return $enabled;
 }
+
 // afficher la date de livraison dans le mail de confirmation
-add_action( "woocommerce_email_after_order_table", "custom_woocommerce_email_after_order_table", 10, 1);
+ add_action( 'woocommerce_email_order_details', 'ts_email_order_details', 10, 4);
 
-function custom_woocommerce_email_after_order_table( $order ) {
-
-    echo '<p>Delivery Day :'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
+ function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
+   echo '<p><strong>Votre commande sera livrée le : </strong>'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
 
 }
