@@ -8,7 +8,18 @@
  * If you don't plan to dequeue the Storefront Core CSS you can remove the subsequent line and as well
  * as the sf_child_theme_dequeue_style() function declaration.
  * PHP version 5.6
- */
+ * @category   CategoryName
+ * @package    PackageName
+ * @author     Original Author couleurmate
+ * @author     Another Author PasLoin, alexsegura
+ * @copyright  2019-2020
+ * @license    GNU General Public License v3.0
+ * @version    SVN: $Id$
+ * @link       
+ * @see        
+ * @since      File available since Release  
+ * @deprecated File deprecated in Release 
+  */
 
 //add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
