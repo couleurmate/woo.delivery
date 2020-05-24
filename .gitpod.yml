@@ -12,7 +12,7 @@ ports:
     onOpen: ignore
 
 tasks:
-  - init: wp-setup-theme # or wp-setup-theme
+  - init: wp-setup-theme # or wp-setup-plugin
     command: apache2ctl start # start Apache server
   
   # start MailHog (SMTP testing tool) 
