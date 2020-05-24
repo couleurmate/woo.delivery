@@ -43,9 +43,16 @@ function wp-setup () {
   mkdir $DESTINATION
   mv $HOME/workspace/* $DESTINATION
   
-  # create a wp-config.php
+# create a wp-config.php
+  # BUG BUG BUG 
+  # ORIGINAL is : 
    # cp $HOME/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
-cp $HOME/${GITPOD_REPO_ROOT}/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+    # some test : 
+    # cp $HOME/${GITPOD_REPO_ROOT}/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+cp conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+
+# END create a wp-config.php
+
   # Setup WordPress database
   cd ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/
   wp core install \
