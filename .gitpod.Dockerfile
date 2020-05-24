@@ -10,8 +10,8 @@ ENV APACHE_DOCROOT="public_html"
 ### Setups, Node, NPM ###
 USER gitpod
 ADD https://api.wordpress.org/secret-key/1.1/salt /dev/null
-RUN git clone https://github.com/luizbills/gitpod-wordpress $HOME/gitpod-wordpress && \
-    cat $HOME/gitpod-wordpress/conf/.bashrc.sh >> $HOME/.bashrc && \
+RUN git clone https://github.com/PasLoin/woo.delivery $HOME/woo-delivery && \
+    cat $HOME/woo-delivery/conf/.bashrc.sh >> $HOME/.bashrc && \
     . $HOME/.bashrc && \
     bash -c ". .nvm/nvm.sh && nvm install --lts"
 
@@ -26,8 +26,8 @@ RUN go get github.com/mailhog/MailHog && \
     ### Apache ###
     apt-get -y install apache2 && \
     chown -R gitpod:gitpod /var/run/apache2 /var/lock/apache2 /var/log/apache2 && \
-    echo "include ${HOME}/gitpod-wordpress/conf/apache.conf" > /etc/apache2/apache2.conf && \
-    echo ". ${HOME}/gitpod-wordpress/conf/apache.env.sh" > /etc/apache2/envvars && \
+    echo "include ${HOME}/woo-delivery/conf/apache.conf" > /etc/apache2/apache2.conf && \
+    echo ". ${HOME}/woo-delivery/conf/apache.env.sh" > /etc/apache2/envvars && \
     ### PHP ###
     add-apt-repository ppa:ondrej/php && \
     apt-get update && \
@@ -49,7 +49,7 @@ RUN go get github.com/mailhog/MailHog && \
         php${PHP_VERSION}-opcache \
         php-xdebug && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* && \
-    cat /home/gitpod/gitpod-wordpress/conf/php.ini >> /etc/php/${PHP_VERSION}/apache2/php.ini && \
+    cat /home/gitpod/woo-delivery/conf/php.ini >> /etc/php/${PHP_VERSION}/apache2/php.ini && \
     a2dismod php* && \
     a2dismod mpm_* && \
     a2enmod mpm_prefork && \
