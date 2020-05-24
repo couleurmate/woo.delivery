@@ -1,7 +1,7 @@
 wp plugin delete hello
 wp plugin delete akismet
 wp theme install realdesign
-wp theme activate ${REPO_NAME}
+wp theme activate ${woo-delivery}
 wp plugin install woocommerce --activate # install WooCommerce
 wp plugin install coopcycle --activate # install Coopcycle plugin @see https://github.com/coopcycle/coopcycle-plugins
 wp theme install storefront --activate 
