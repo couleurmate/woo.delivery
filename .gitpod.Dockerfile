@@ -66,7 +66,7 @@ USER gitpod
 RUN wget -q https://wordpress.org/latest.zip -O $HOME/wordpress.zip && \
     unzip -qn $HOME/wordpress.zip -d $HOME && \
     unlink $HOME/wordpress.zip && \
-    cp $HOME/gitpod-wordpress/conf/.htaccess $HOME/wordpress/.htaccess && \
+    cp $HOME/woo-delivery/conf/.htaccess $HOME/wordpress/.htaccess && \
     mkdir $HOME/wordpress/database/ && \
     wget -q https://www.adminer.org/latest.php -O $HOME/wordpress/database/index.php && \
     mkdir $HOME/wordpress/phpinfo/ && \
