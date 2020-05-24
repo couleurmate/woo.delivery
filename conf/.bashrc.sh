@@ -44,7 +44,7 @@ function wp-setup () {
   mv $HOME/workspace/* $DESTINATION
   
   # create a wp-config.php
-  cp $HOME/gitpod-wordpress/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+  cp $HOME/woo-delivery/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
 
   # Setup WordPress database
   cd ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/
