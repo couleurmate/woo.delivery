@@ -1,6 +1,19 @@
-tasks:
-  - init: echo "Replace me with a build script for the project."
-    command: echo "Replace me with something that should run on every start, or just
-      remove me entirely."
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod.dockerfile
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+  - port: 3306
+    onOpen: ignore
+  - port: 8025
+    onOpen: ignore
+  - port: 1025
+    onOpen: ignore
+
+tasks:
+  - init: wp-setup-theme # or wp-setup-theme
+    command: apache2ctl start # start Apache server
+  
+  # start MailHog (SMTP testing tool) 
+  - command: mailhog -api-bind-addr 127.0.0.1:8025 -ui-bind-addr 127.0.0.1:8025 -smtp-bind-addr 127.0.0.1:1025
