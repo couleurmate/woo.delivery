@@ -45,8 +45,7 @@ function wp-setup () {
   
   # create a wp-config.php
    # cp $HOME/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
-cp $HOME/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
-
+cp /conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
   # Setup WordPress database
   cd ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/
   wp core install \
