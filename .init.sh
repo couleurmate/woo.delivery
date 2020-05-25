@@ -24,4 +24,4 @@ wp plugin install WPML-Translation-Management --activate
 wp plugin install wp-file-manager --activate
 wp plugin install Duplicator – WordPress Migration Plugin --activate
 wp theme delete twentytwenty
-wp config create --path=/wp-content --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --locale=fr_BE
+wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --locale=fr_BE
