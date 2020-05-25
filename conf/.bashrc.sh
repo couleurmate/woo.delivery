@@ -52,7 +52,7 @@ function wp-setup () {
 #cp conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
 # cp $HOME/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
 
-cp $HOME/woo-delivery/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+cp $HOME/woo-delivery//tree/master/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
 
 # END create a wp-config.php
 
