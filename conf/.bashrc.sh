@@ -49,8 +49,8 @@ function wp-setup () {
    # cp $HOME/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
     # some test : 
     # cp $HOME/${GITPOD_REPO_ROOT}/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
-cp conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
-
+#cp conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
+cp $HOME/conf/wp-config.php ${GITPOD_REPO_ROOT}/${APACHE_DOCROOT}/wp-config.php
 # END create a wp-config.php
 
   # Setup WordPress database
