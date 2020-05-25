@@ -1,6 +1,7 @@
 wp plugin delete hello
 wp plugin delete akismet
 wp theme install realdesign
+wp theme install ${woo-delivery}
 wp theme activate ${woo-delivery}
 wp plugin install woocommerce --activate # install WooCommerce
 wp plugin install coopcycle --activate # install Coopcycle plugin @see https://github.com/coopcycle/coopcycle-plugins
@@ -23,4 +24,4 @@ wp plugin install WPML-Translation-Management --activate
 wp plugin install wp-file-manager --activate
 wp plugin install Duplicator – WordPress Migration Plugin --activate
 wp theme delete twentytwenty
-wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --locale=fr_BE
+wp config create --path=/wp-content --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --locale=fr_BE
