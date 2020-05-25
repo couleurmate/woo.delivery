@@ -11,7 +11,7 @@ ENV APACHE_DOCROOT="public_html"
 USER gitpod
 ADD https://api.wordpress.org/secret-key/1.1/salt /dev/null
 RUN git clone https://github.com/PasLoin/woo.delivery $HOME/woo-delivery && \
-    cat $HOME/woo-delivery/tree/master/conf/.bashrc.sh >> $HOME/.bashrc && \
+    cat $HOME/woo-delivery/conf/.bashrc.sh >> $HOME/.bashrc && \
     . $HOME/.bashrc && \
     bash -c ". .nvm/nvm.sh && nvm install --lts"
 
