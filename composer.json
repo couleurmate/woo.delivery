@@ -1,8 +1,4 @@
 {
-    "name": "vendor/app"
-    }
-],
-{
   "name": "woo-delivery/wordpress",
   "description": "child theme for Storefront",
   "keywords": [
