@@ -90,6 +90,6 @@ function bbloomer_remove_product_page_sku( $enabled ) {
  add_action( 'woocommerce_email_order_details', 'ts_email_order_details', 10, 4);
 
  function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
-   echo '<p><strong>Votre commande sera livrée le : </strong>'. get_post_meta( $order->id, "shipping_date", true ) .'</p>';
+   echo '<p><strong>Votre commande sera livrée le : </strong>'. get_post_meta( $order->get_id(), "shipping_date", true ) .'</p>';
 
 }
