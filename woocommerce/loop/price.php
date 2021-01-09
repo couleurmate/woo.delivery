@@ -25,7 +25,7 @@ $origin_attribute = null;
 $brand_attribute = null;
 $unit_weight_attribute = null;
 
-foreach ($product->attributes as $attribute) {
+foreach ($product->get_attributes() as $attribute) {
     if ($attribute->get_name() === 'pa_origin') {
         $origin_attribute = $attribute;
     }
