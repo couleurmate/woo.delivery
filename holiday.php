@@ -14,3 +14,8 @@
    add_action( 'woocommerce_before_cart', 'bbloomer_wc_shop_disabled', 5 );
    add_action( 'woocommerce_before_checkout_form', 'bbloomer_wc_shop_disabled', 5 );
 }
+// Show Holiday Notice
+
+function bbloomer_wc_shop_disabled() {
+        wc_print_notice( 'Votre magasin est en vacances du 19/07 au 04/08', 'error');
+} 
